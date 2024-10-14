@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Details</title>
+</head>
+<body>
+<h1>User Details</h1>
+
+<div>
+    <p>ID: <span th:text="${user.id}"></span></p>
+    <p>UserName: <span th:text="${user.username}"></span></p>
+    <p>Email: <span th:text="${user.email}"></span></p>
+</div>
+
+<button class="buttonLogout" onclick="window.location.href ='logout';">Logout</button>
+
+<!--<a href="/users">Back to Users List</a>-->
+</body>
+</html>
